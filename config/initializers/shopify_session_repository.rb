@@ -19,4 +19,4 @@
 #   end
 # end
 
-ShopifySessionRepository.storage = InMemorySessionStore
+ShopifyApp::SessionRepository.storage = InMemorySessionStore

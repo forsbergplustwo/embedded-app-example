@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
-  
+  layout 'embedded_app'
   around_filter :shopify_session
-  
+
   def index
   end
 
