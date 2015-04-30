@@ -11,11 +11,12 @@ Clone the repo from git:
     git clone https://github.com/Shopify/embedded-app-example.git
     cd embedded-app-example
 
-To add your application credentials:
+Create a `.env` file for your application credentials:
 
-    cp config/shopify_app.yml.example config/shopify_app.yml
-
-Open the `config/shopify_app.yml` and add your credentials.
+```
+SHOPIFY_CLIENT_API_KEY=<your key>
+SHOPIFY_CLIENT_API_SECRET=<your secret>
+```
 
 Install the gems:
 
