@@ -1,8 +1,10 @@
 EmbededApp::Application.routes.draw do
 
   controller :sessions do
-    get 'login' => :new
-    get 'auth/shopify/callback' => :show
+    get 'login' => :new, :as => :login
+    post 'login' => :create, :as => :authenticate
+    get 'auth/shopify/callback' => :callback
+    get 'logout' => :destroy, :as => :logout
   end
 
   get 'modal' => "home#modal", :as => :modal
