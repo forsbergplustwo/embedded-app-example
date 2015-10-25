@@ -28,6 +28,10 @@ Install the gems:
 
     bundle install
 
+Create necessary tables:
+
+    rake db:migrate
+
 Run the server:
 
     bundle exec rails server
