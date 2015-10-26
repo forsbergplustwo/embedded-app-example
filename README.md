@@ -28,9 +28,21 @@ Install the gems:
 
     bundle install
 
+Create necessary tables:
+
+    rake db:migrate
+
 Run the server:
 
     bundle exec rails server
+
+Deploy to Heroku:
+    heroku create
+    git push heroku master
+    heroku run rake db:migrate
+    heroku config:set SHOPIFY_CLIENT_API_KEY=<your_api_key>
+    heroku config:set SHOPIFY_CLIENT_API_SECRET=<our_api_secret>
+    heroku open
 
 To install the application on your dev-shop go to:
 
