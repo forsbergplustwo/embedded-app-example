@@ -37,6 +37,7 @@ Run the server:
     bundle exec rails server
 
 Deploy to Heroku:
+
     heroku create
     git push heroku master
     heroku run rake db:migrate
